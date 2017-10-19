@@ -11,9 +11,9 @@ Scripts
 * [push][13]: pushes only the current branch to origin
 * [pull][14]: pulls changes down but with `rebase-i-p` to avoid same-branch merges and commit replays
 
-[12]: /70m4/git-central/blob/master/scripts/checkout
-[13]: /70m4/git-central/blob/master/scripts/push
-[14]: /70m4/git-central/blob/master/scripts/pull
+[12]: /scripts/checkout
+[13]: /scripts/push
+[14]: /scripts/pull
 
 Server-side Hooks
 =================
@@ -31,23 +31,23 @@ See the individual scripts for documentation, but an overview:
 * [update-lock-check][9]: enforces locked/preserved branches
 * [update-stable][10]: enforces proper movement of stable
 
-[1]: /70m4/git-central/blob/master/server/post-receive-commitnumbers
-[2]: /70m4/git-central/blob/master/server/post-receive-email
-[3]: /70m4/git-central/blob/master/server/post-receive-gitconfig
-[4]: /70m4/git-central/blob/master/server/post-receive-hudson
-[5]: /70m4/git-central/blob/master/server/post-receive-trac
-[6]: /70m4/git-central/blob/master/server/update-allow-tags-branches
-[7]: /70m4/git-central/blob/master/server/update-ensure-follows
-[8]: /70m4/git-central/blob/master/server/update-ensure-ticket-reference
-[9]: /70m4/git-central/blob/master/server/update-lost-check
-[10]: /70m4/git-central/blob/master/server/update-stable
+[1]: /server/post-receive-commitnumbers
+[2]: /server/post-receive-email
+[3]: /server/post-receive-gitconfig
+[4]: /server/post-receive-hudson
+[5]: /server/post-receive-trac
+[6]: /server/update-allow-tags-branches
+[7]: /server/update-ensure-follows
+[8]: /server/update-ensure-ticket-reference
+[9]: /server/update-lost-check
+[10]: /server/update-stable
 
 Client-side Hooks
 =================
 
 * [commit-msg-trac][11]: enforces ticket references in commit messages
 
-[11]: /70m4/git-central/blob/master/client/commit-msg-trac
+[11]: /client/commit-msg-trac
 
 Bootstrapping Scripts
 =====================
@@ -55,8 +55,8 @@ Bootstrapping Scripts
 * [create-gitconfig][15]: creates a new DAG for managing repository-specific configuration (works with [post-receive-gitconfig][3])
 * [create-stable][16]: creates a new DAG for the first release to merge in to (works with [update-stable][10])
 
-[15]: /70m4/git-central/blob/master/scripts/create-gitconfig
-[16]: /70m4/git-central/blob/master/scripts/create-stable
+[15]: /scripts/create-gitconfig
+[16]: /scripts/create-stable
 
 Install Server-side Hooks
 =========================
@@ -65,8 +65,8 @@ Install Server-side Hooks
 * Edit `your_repo.git/hooks/post-receive` and `your_repo.git/hooks/update` to call the `gc` hooks as appropriate
   * [post-receive.sample][17] and [update.sample][18] are good templates to use for calling multiple hooks
 
-[17]: /70m4/git-central/blob/master/server/post-receive.sample
-[18]: /70m4/git-central/blob/master/server/update.sample
+[17]: /server/post-receive.sample
+[18]: /server/update.sample
 
 Todo
 ====
