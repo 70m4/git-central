@@ -39,7 +39,7 @@ See the individual scripts for documentation, but an overview:
 [6]: /server/update-allow-tags-branches
 [7]: /server/update-ensure-follows
 [8]: /server/update-ensure-ticket-reference
-[9]: /server/update-lost-check
+[9]: /server/update-lock-check
 [10]: /server/update-stable
 
 Client-side Hooks
